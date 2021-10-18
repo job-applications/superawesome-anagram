@@ -7,22 +7,17 @@ class SuperawesomeAnagram extends Command {
     // add --version flag to show CLI version
     version: flags.version({char: 'v'}),
     help: flags.help({char: 'h'}),
-    // flag with a value (-n, --name=VALUE)
-    name: flags.string({char: 'n', description: 'name to print'}),
-    // flag with no value (-f, --force)
-    force: flags.boolean({char: 'f'}),
   }
 
-  static args = [{name: 'file'}]
+  static args = [{
+    name: 'file',
+    required: true,
+    description: 'Provide a data file containing a sorted list of anagrams',
+  }]
 
   async run() {
-    const {args, flags} = this.parse(SuperawesomeAnagram)
-
-    const name = flags.name ?? 'world'
-    this.log(`hello ${name} from ./src/index.ts`)
-    if (args.file && flags.force) {
-      this.log(`you input --force and --file: ${args.file}`)
-    }
+    const {args} = this.parse(SuperawesomeAnagram)
+    this.log(`hello ${args.name} from ./src/index.ts`)
   }
 }
 
