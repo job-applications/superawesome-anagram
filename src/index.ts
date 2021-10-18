@@ -1,4 +1,5 @@
 import {Command, flags} from '@oclif/command'
+import { findAnagramsInFile } from './find-anagrams-in-file';
 
 class SuperawesomeAnagram extends Command {
   static description = 'describe the command here'
@@ -17,7 +18,7 @@ class SuperawesomeAnagram extends Command {
 
   async run() {
     const {args} = this.parse(SuperawesomeAnagram)
-    this.log(`hello ${args.name} from ./src/index.ts`)
+    await findAnagramsInFile(args.file, this.log)
   }
 }
 

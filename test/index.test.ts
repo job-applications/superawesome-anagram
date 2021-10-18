@@ -15,8 +15,8 @@ describe('superawesome-anagram', () => {
 
   test
   .stdout()
-  .do(() => cmd.run(['--name', 'jeff']))
-  .it('runs hello --name jeff', ctx => {
-    expect(ctx.stdout).to.contain('hello jeff')
+  .do(() => cmd.run(['test/data/two-groups-of-lines.txt']))
+  .it('returns a list of anagrams to the terminal', ctx => {
+    expect(ctx.stdout).to.contain('abc,bac,cba\nfun,unf\nhello\n')
   })
 })

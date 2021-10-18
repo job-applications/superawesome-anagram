@@ -6,7 +6,10 @@
     "outDir": "lib",
     "rootDir": "src",
     "strict": true,
-    "target": "es2017"
+    "target": "esnext",
+    "lib": [
+      "esnext.asynciterable"
+    ]
   },
   "include": [
     "src/**/*"

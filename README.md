@@ -1,23 +1,22 @@
 superawesome-anagram
 ====================
 
-
-
-[![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/superawesome-anagram.svg)](https://npmjs.org/package/superawesome-anagram)
-[![CircleCI](https://circleci.com/gh/job-applications/superawesome-anagram/tree/master.svg?style=shield)](https://circleci.com/gh/job-applications/superawesome-anagram/tree/master)
-[![Downloads/week](https://img.shields.io/npm/dw/superawesome-anagram.svg)](https://npmjs.org/package/superawesome-anagram)
-[![License](https://img.shields.io/npm/l/superawesome-anagram.svg)](https://github.com/job-applications/superawesome-anagram/blob/master/package.json)
-
 <!-- toc -->
 * [Usage](#usage)
 * [Commands](#commands)
 <!-- tocstop -->
-# Usage
+Prerequisites
+---------------
+
+* Node.js 14.18.1 (LTS) - it will likely work with earlier versions
+* Tested using Linux but should work on macOS and Windows also
+
+Usage
+---------------
 <!-- usage -->
 ```sh-session
-$ npm install -g superawesome-anagram
-$ superawesome-anagram COMMAND
+$ git clone https://github.com/job-applications/superawesome-anagram
+$ npm install
 running command...
 $ superawesome-anagram (-v|--version|version)
 superawesome-anagram/0.0.0 linux-x64 node-v14.18.1
