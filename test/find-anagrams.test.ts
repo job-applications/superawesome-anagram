@@ -1,6 +1,6 @@
 import {expect, test} from '@oclif/test'
 
-import { findAnagrams } from '../src/find-anagrams';
+import {findAnagrams} from '../src/find-anagrams'
 
 describe('findAnagrams', () => {
   test
@@ -9,6 +9,6 @@ describe('findAnagrams', () => {
       ['abc', 'bac', 'cba'],
       ['fun', 'unf'],
       ['hello'],
-    ]);
+    ])
   })
 })

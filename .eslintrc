@@ -2,5 +2,14 @@
   "extends": [
     "oclif",
     "oclif-typescript"
-  ]
+  ],
+  "rules": {
+    "unicorn/filename-case": "off",
+    "unicorn/prefer-node-protocol": "off"
+  },
+  "settings": {
+    "node": {
+        "tryExtensions": [".js", ".json", ".node", ".ts", ".d.ts"]
+    }
+  }
 }

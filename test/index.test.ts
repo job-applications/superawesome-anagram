@@ -1,3 +1,4 @@
+/* eslint-disable unicorn/catch-error-name */
 import {expect, test} from '@oclif/test'
 
 import cmd = require('../src')
