@@ -11,4 +11,11 @@ describe('findAnagrams', () => {
       ['hello'],
     ])
   })
+
+  test
+  .it('filters out duplicate inputs', () => {
+    expect(findAnagrams(['fun', 'fun', 'unf'])).to.deep.equal([
+      ['fun', 'unf'],
+    ])
+  })
 })
